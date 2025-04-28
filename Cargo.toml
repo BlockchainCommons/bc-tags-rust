@@ -2,7 +2,7 @@
 name = "bc-tags"
 version = "0.1.0"
 edition = "2024"
-description = "Blockchain Commons CBOR Tags."
+description = "Blockchain Commons CBOR Tags"
 authors = ["Blockchain Commons"]
 repository = "https://github.com/BlockchainCommons/bc-tags-rust"
 readme = "README.md"
@@ -15,11 +15,8 @@ keywords = [
     "format",
     "serialization",
 ] # Up to five
-categories = [
-    "data-structures",
-    "encoding",
-] # https://crates.io/category_slugs
+categories = ["data-structures", "encoding"] # https://crates.io/category_slugs
 
 [dependencies]
-dcbor = "^0.17.0"
+dcbor = "^0.18.0"
 paste = "^1.0.12"

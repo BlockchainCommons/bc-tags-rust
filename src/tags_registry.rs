@@ -13,9 +13,7 @@
 //! Tags in the range 24-255 only require two bytes to encode.
 //! Higher numbered tags are first-come, first-served.
 
-use dcbor::prelude::*;
-
-pub use dcbor::TAG_DATE;
+pub use dcbor::prelude::*;
 
 const_cbor_tag!(32, URI, "url");
 const_cbor_tag!(37, UUID, "uuid");
