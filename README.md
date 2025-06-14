@@ -14,7 +14,7 @@ This crate defines the CBOR tags for serialized data types used in Blockchain Co
 
 ```toml
 [dependencies]
-bc-tags = "0.3.0"
+bc-tags = "0.4.0"
 ```
 
 ## Status - Community Review
