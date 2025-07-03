@@ -17,6 +17,11 @@ This crate defines the CBOR tags for serialized data types used in Blockchain Co
 bc-tags = "0.5.0"
 ```
 
+## Version History
+
+**0.5.0** — July 3, 2025
+- Align to dependencies.
+
 ## Status - Community Review
 
 `bc-tags` is currently in a community review stage. We would appreciate your consideration and/or testing of the libraries. Obviously, let us know if you find any mistakes or problems. But also let us know if the API meets your needs, if the functionality is easy to use, if the usage of Rust feels properly standardized, and if the library solves any problems you are encountering when doing this kind of coding. Also let us know how it could be improved and what else you'd need for this to be just right for your usage. Comments can be posted [to the Gordian Developer Community](https://github.com/BlockchainCommons/Gordian-Developer-Community/discussions/116).
@@ -30,11 +35,6 @@ See [Blockchain Commons' Development Phases](https://github.com/BlockchainCommon
 `bc-tags` is a project of [Blockchain Commons](https://www.blockchaincommons.com/). We are proudly a "not-for-profit" social benefit corporation committed to open source & open development. Our work is funded entirely by donations and collaborative partnerships with people like you. Every contribution will be spent on building open tools, technologies, and techniques that sustain and advance blockchain and internet security infrastructure and promote an open web.
 
 To financially support further development of `bc-tags` and other projects, please consider becoming a Patron of Blockchain Commons through ongoing monthly patronage as a [GitHub Sponsor](https://github.com/sponsors/BlockchainCommons). You can also support Blockchain Commons with bitcoins at our [BTCPay Server](https://btcpay.blockchaincommons.com/).
-
-## Version History
-
-**0.5.0** — July 3, 2025
-- Align to dependencies.
 
 ## Contributing
 
