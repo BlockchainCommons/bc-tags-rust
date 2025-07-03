@@ -1,6 +1,6 @@
 [package]
 name = "bc-tags"
-version = "0.4.0"
+version = "0.5.0"
 edition = "2024"
 description = "Blockchain Commons CBOR Tags"
 authors = ["Blockchain Commons"]
@@ -18,5 +18,5 @@ keywords = [
 categories = ["data-structures", "encoding"] # https://crates.io/category_slugs
 
 [dependencies]
-dcbor = "^0.21.0"
+dcbor = "^0.22.0"
 paste = "^1.0.12"
