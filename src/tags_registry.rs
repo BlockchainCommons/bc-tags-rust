@@ -6,7 +6,8 @@
 //! has the following low-numbered values available:
 //!
 //! One byte encoding: 6-15, 19-20
-//! Two byte encoding: 48-51, 53, 55-60, 62, 88-95, 99, 102, 105-109, 113-119, 128-255
+//! Two byte encoding: 48-51, 53, 55-60, 62, 88-95, 99, 102, 105-109, 113-119,
+//! 128-255
 //!
 //! Tags in the range 0-23 require "standards action" for the IANA to recognize.
 //! Tags in the range 24-32767 require a specification to reserve.
@@ -18,19 +19,20 @@ pub use dcbor::prelude::*;
 const_cbor_tag!(32, URI, "url");
 const_cbor_tag!(37, UUID, "uuid");
 
-// A previous version of the Envelope spec used tag #6.24 ("Encoded CBOR Item") as
-// the header for the Envelope `leaf` case. Unfortunately, this was not a correct
-// use of the tag, as the contents of #6.24 (RFC8949 §3.4.5.1) MUST always be a
-// byte string, while we were simply using it as a wrapper/header for any dCBOR
-// data item.
+// A previous version of the Envelope spec used tag #6.24 ("Encoded CBOR Item")
+// as the header for the Envelope `leaf` case. Unfortunately, this was not a
+// correct use of the tag, as the contents of #6.24 (RFC8949 §3.4.5.1) MUST
+// always be a byte string, while we were simply using it as a wrapper/header
+// for any dCBOR data item.
 //
 // https://www.rfc-editor.org/rfc/rfc8949.html#name-encoded-cbor-data-item
 //
 // The new leaf tag is #6.201, but we will still recognize #6.24 for backwards
 // compatibility.
 
-// The only two tags that Blockchain Commons has registered in the "Specification Required"
-// range are the two tags for "Gordian Envelope" (#6.200) and "dCBOR/Envelope Leaf" (#6.201).
+// The only two tags that Blockchain Commons has registered in the
+// "Specification Required" range are the two tags for "Gordian Envelope"
+// (#6.200) and "dCBOR/Envelope Leaf" (#6.201).
 
 //
 // Core Envelope tags.
@@ -130,10 +132,18 @@ const_cbor_tag!(311, ACCOUNT_V1, "crypto-account");
 
 // Tags for subtypes specific to AccountBundle (crypto-output).
 const_cbor_tag!(400, OUTPUT_SCRIPT_HASH, "output-script-hash");
-const_cbor_tag!(401, OUTPUT_WITNESS_SCRIPT_HASH, "output-witness-script-hash");
+const_cbor_tag!(
+    401,
+    OUTPUT_WITNESS_SCRIPT_HASH,
+    "output-witness-script-hash"
+);
 const_cbor_tag!(402, OUTPUT_PUBLIC_KEY, "output-public-key");
 const_cbor_tag!(403, OUTPUT_PUBLIC_KEY_HASH, "output-public-key-hash");
-const_cbor_tag!(404, OUTPUT_WITNESS_PUBLIC_KEY_HASH, "output-witness-public-key-hash");
+const_cbor_tag!(
+    404,
+    OUTPUT_WITNESS_PUBLIC_KEY_HASH,
+    "output-witness-public-key-hash"
+);
 const_cbor_tag!(405, OUTPUT_COMBO, "output-combo");
 const_cbor_tag!(406, OUTPUT_MULTISIG, "output-multisig");
 const_cbor_tag!(407, OUTPUT_SORTED_MULTISIG, "output-sorted-multisig");
