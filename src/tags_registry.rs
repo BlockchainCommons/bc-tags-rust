@@ -19,8 +19,6 @@ pub use dcbor::prelude::*;
 const_cbor_tag!(32, URI, "url");
 const_cbor_tag!(37, UUID, "uuid");
 
-const_cbor_tag!(102, NAN_BSTR, "nan-bstr");
-
 // A previous version of the Envelope spec used tag #6.24 ("Encoded CBOR Item")
 // as the header for the Envelope `leaf` case. Unfortunately, this was not a
 // correct use of the tag, as the contents of #6.24 (RFC8949 §3.4.5.1) MUST
