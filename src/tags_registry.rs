@@ -157,7 +157,6 @@ pub fn register_tags_in(tags_store: &mut TagsStore) {
     let tags = vec![
         cbor_tag!(URI),
         cbor_tag!(UUID),
-        cbor_tag!(NAN_BSTR),
         cbor_tag!(ENCODED_CBOR),
         cbor_tag!(ENVELOPE),
         cbor_tag!(LEAF),
