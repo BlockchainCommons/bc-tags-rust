@@ -40,7 +40,8 @@ const_cbor_tag!(37, UUID, "uuid");
 
 const_cbor_tag!(24, ENCODED_CBOR, "encoded-cbor");
 const_cbor_tag!(200, ENVELOPE, "envelope");
-const_cbor_tag!(201, LEAF, "leaf");
+const_cbor_tag!(201, LEAF, "leaf"); // dCBOR data item
+const_cbor_tag!(262, JSON, "json"); // bstr containing UTF-8 JSON text
 
 //
 // Envelope extension tags
@@ -160,6 +161,7 @@ pub fn register_tags_in(tags_store: &mut TagsStore) {
         cbor_tag!(ENCODED_CBOR),
         cbor_tag!(ENVELOPE),
         cbor_tag!(LEAF),
+        cbor_tag!(JSON),
         cbor_tag!(KNOWN_VALUE),
         cbor_tag!(DIGEST),
         cbor_tag!(ENCRYPTED),
