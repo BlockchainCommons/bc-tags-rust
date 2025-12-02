@@ -18,5 +18,5 @@ keywords = [
 categories = ["data-structures", "encoding"] # https://crates.io/category_slugs
 
 [dependencies]
-dcbor = "^0.23.3"
+dcbor = "^0.24.0"
 paste = "^1.0.12"
